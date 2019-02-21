@@ -8,32 +8,63 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<div class="p-1 bg-info"></div>
-<footer class="page-footer pb-5 pt-5 mb-0 text-center font-small bg-dark pt-5">
-    <p class="text-light">copyright</p>
-</footer>
-
 <body class="bg-secondary">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand ml-5 btn-lg text-light btn-info" href="#">Noah Glasser</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="nav navbar-nav ml-auto">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" role="button">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pb-4 pt-4">
+    <a class="navbar-brand ml-5 btn-lg text-light btn-info" href="index.html">Noah Glasser</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="nav navbar-nav ml-auto">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" role="button">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
+        <section  style="width:800px; margin:0 auto;" class="container bg-white mb-5 mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <h3 class="ml-4 mt-3 text-info">Contact</h3>
+                </div>
+            </div>
+            <form id="contact-form">
+                <ul>
+                  <li>
+                    <label for="name">Name</label>
+                    <br>
+                    <input style="width:600px" type="text" name="name" placeholder="John Smith" required="required">
+                  </li>
+                  <br>
+                  <li>
+                    <label for="email">Email</label>
+                    <br>
+                    <input style="width:600px" type="email" name="email" placeholder="example@gmail.com" required="required">
+                  </li>
+                  <br>
+                  <li>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea style="width:600px" name="message" required="required"></textarea>
+                  </li>
+                </ul>
+                <input type="submit" class="ml-4 mt-3 btn-md btn-info mb-5">
+              </form>
+
+        </section>
+
+    <div class="p-1 bg-info"></div>
+    <footer class="page-footer pb-5 pt-5 mb-0 text-center font-small bg-dark pt-5">
+      <p class="text-light">copyright</p>
+    </footer>
+      
 </body>
 </html>
